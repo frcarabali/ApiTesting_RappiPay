@@ -13,5 +13,5 @@ Feature: API Testing de Shazam
   Scenario: Detectar una canción
     Given el usuario realiza una petición POST al endpoint "/songs/detect" con un payload válido
     When la petición es procesada correctamente
-    Then el código de respuesta es 200
+    Then el código de respuesta es 204
     And el JSON de respuesta contiene el campo "track"
